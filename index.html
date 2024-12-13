@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumanti Newari</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <h1>Welcome to Lumanti Newari</h1>
+        <p>Discover the rich flavors of traditional Newari cuisine. Our dishes are crafted with love and heritage, offering you a taste of Nepal right here at Lumanti Newari.</p>
+        <h2>Popular Dishes</h2>
+        <div class="popular-dishes">
+            <div class="dish">
+                <img src="yomari.jpg" alt="Dish 1">
+                <h3>Yomari</h3>
+                <p>Yomari is a traditional Newari steamed dumpling filled with sweet molasses or sesame seeds.</p>
+            </div>
+            <div class="dish">
+                <img src="choila.jpg" alt="Dish 2">
+                <h3>CHOILA</h3>
+                <p>Choila is a spicy grilled meat dish from Newari cuisine.</p>
+            </div>
+            <div class="dish">
+                <img src="Momo.jpg" alt="Dish 2" >
+                <h3>MOMO</h3>
+                <p>Momo is a popular Nepali dumpling filled with meat or vegetables.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-category">
+            <h3>Appetizers</h3>
+            <div class="menu-item">
+                <h4>MOMO</h4>
+                <p>Momo is a popular Nepali dumpling filled with meat or vegetables. - $5.99</p>
+                <button onclick="addToCart('MOMO', 5.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h4>CHOILA</h4>
+                <p>Choila is a spicy grilled meat dish from Newari cuisine - $6.99</p>
+                <button onclick="addToCart('CHOILA', 6.99)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="menu-category">
+            <h3>Main Courses</h3>
+            <div class="menu-item">
+                <h4>YOMARI</h4>
+                <p>Yomari is a traditional Newari steamed dumpling filled with sweet molasses or sesame seeds.- $12.99</p>
+                <button onclick="addToCart('YOMARI', 12.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="total">Total: $0.00</p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: Tokha, Kathmandu, Nepal</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Email: contact@lumantinewari.com</p>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.8304030249795!2d85.30398231454263!3d27.751828082774778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19003a0f7215%3A0xa4890a7ef4b93489!2sTokha%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2snp!4v1700000000000!5m2!1sen!2snp"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Lumanti Newari. All rights reserved.</p>
+    </footer>
+</body>
+</html>
